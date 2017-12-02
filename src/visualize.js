@@ -1,4 +1,3 @@
-if (typeof define !== 'function') var define = require('amdefine')(module);
 define(['./Kit','./parse'],function (K,parse) {
 parse.exportConstants();
 

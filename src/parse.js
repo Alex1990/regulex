@@ -1,4 +1,3 @@
-if (typeof define !== 'function') var define = require('amdefine')(module);
 define(['./NFA','./Kit'],function (NFA,K) {
 /**
 Parse Regex to AST
