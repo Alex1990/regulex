@@ -355,19 +355,7 @@ function repeats(s,n) {return new Array(n+1).join(s)}
 
 function log() {
   var a=slice.call(arguments);
-  if (isBrowser) {
-    Function.prototype.apply.apply(console.log,[console,a]);
-  } else {//Assume it is Node.js
-    var s='util';
-    var util=require(s); // skip require.js
-    a.forEach(function (x) {
-      console.log(util.inspect(x,{
-        showHidden:false,customInspect:true,
-        depth:64,colors:true
-      }));
-    });
-
-  }
+  Function.prototype.apply.apply(console.log,[console,a]);
 }
 
 function locals(f) {
