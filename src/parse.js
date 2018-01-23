@@ -1,5 +1,5 @@
 var NFA = require('./NFA');
-var K = require('./K');
+var K = require('./Kit');
 /**
 Parse Regex to AST
 parse:Function(re:String)
