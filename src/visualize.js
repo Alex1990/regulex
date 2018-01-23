@@ -1,4 +1,6 @@
-define(['./Kit','./parse'],function (K,parse) {
+var K = require('./Kit');
+var parse = require('./parse');
+
 parse.exportConstants();
 
 var FONT_SIZE=16,LABEL_FONT_SIZE=14,PATH_LEN=16,BG_COLOR='#EEE',
@@ -811,6 +813,4 @@ function onlyCharClass(node) {
   return !node.chars && !node.ranges.length && node.classes.length===1;
 }
 
-return visualize;
-
-});
+module.exports = visualize;

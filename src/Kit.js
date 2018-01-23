@@ -1,4 +1,3 @@
-define(function () {
 /*Kit*/
 
 var AP=Array.prototype,
@@ -368,7 +367,7 @@ function locals(f) {
   return '{\n'+methods.join(',\n')+'\n}';
 }
 
-return {
+module.exports = {
   sortUnique:sortUnique,
   idUnique:idUnique,hashUnique:hashUnique,
   Set:Set, repeats:repeats,
@@ -380,5 +379,3 @@ return {
   log:log,isBrowser:isBrowser,
   locals:locals
 };
-
-});

@@ -1,4 +1,7 @@
-define(['./parse','./Kit','./NFA'],function (parse,K,NFA) {
+var parse = require('./parse');
+var K = require('./Kit');
+var NFA = require('./NFA');
+
 /**
 Mock RegExp class
 */
@@ -378,6 +381,4 @@ function _readonly(obj,attrs) {
   });
 }
 
-return RegExp;
-
-});
+module.exports = RegExp;

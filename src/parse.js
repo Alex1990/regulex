@@ -1,4 +1,5 @@
-define(['./NFA','./Kit'],function (NFA,K) {
+var NFA = require('./NFA');
+var K = require('./K');
 /**
 Parse Regex to AST
 parse:Function(re:String)
@@ -980,5 +981,4 @@ var config={
 };
 
 
-return parse;
-});
+module.exports = parse;

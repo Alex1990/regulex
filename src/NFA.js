@@ -1,4 +1,4 @@
-define(['./Kit'],function (K) {
+var K = require('./Kit');
 
 /**
 A Naive NFA Implementation
@@ -301,7 +301,4 @@ function structure(a) {
 }
 
 
-return NFA;
-
-
-});
+module.exports = NFA;
